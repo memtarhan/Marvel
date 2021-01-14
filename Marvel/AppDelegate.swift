@@ -22,7 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         initWindow()
         initDI()
         initNavigationBar()
@@ -47,7 +46,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     /// - Initializing UI w/ initial view controller
     func initUI() {
-        rootViewController = assembler?.resolver.resolve(HomeViewController.self) as? UIViewController
+        if let homeViewController = assembler?.resolver.resolve(HomeViewController.self) as? UIViewController {
+            let navigationController = UINavigationController(rootViewController: homeViewController)
+            rootViewController = navigationController
+        }
     }
 
     /// - Initializing UINavigationBar

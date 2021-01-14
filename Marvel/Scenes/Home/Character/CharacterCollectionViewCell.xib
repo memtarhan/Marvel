@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CharacterCollectionViewCell" customModule="Marvel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="228" height="286"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="228" height="286"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tck-A8-tJD" userLabel="Container View" customClass="CharacterView" customModule="Marvel" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="212" height="270"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boseman" translatesAutoresizingMaskIntoConstraints="NO" id="cEb-SU-7ow">
+                                <rect key="frame" x="0.0" y="0.0" width="212" height="270"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cEb-SU-7ow" secondAttribute="trailing" id="Bvl-wg-N9r"/>
+                            <constraint firstAttribute="bottom" secondItem="cEb-SU-7ow" secondAttribute="bottom" id="FAE-Xt-udl"/>
+                            <constraint firstItem="cEb-SU-7ow" firstAttribute="top" secondItem="Tck-A8-tJD" secondAttribute="top" id="xa7-j8-2HW"/>
+                            <constraint firstItem="cEb-SU-7ow" firstAttribute="leading" secondItem="Tck-A8-tJD" secondAttribute="leading" id="zJ1-c3-apo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Tck-A8-tJD" secondAttribute="bottom" constant="8" id="HJp-Fv-reN"/>
+                <constraint firstItem="Tck-A8-tJD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Hzy-M0-kgE"/>
+                <constraint firstAttribute="trailing" secondItem="Tck-A8-tJD" secondAttribute="trailing" constant="8" id="QmC-ax-7de"/>
+                <constraint firstItem="Tck-A8-tJD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="szP-Tb-CTK"/>
+            </constraints>
+            <size key="customSize" width="228" height="286"/>
+            <point key="canvasLocation" x="163.768115942029" y="213.61607142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="boseman" width="1400" height="1400"/>
+    </resources>
+</document>

@@ -25,6 +25,11 @@
 		DBB669BC25B0608C00BA0524 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB669BB25B0608C00BA0524 /* HomeRouter.swift */; };
 		DBB669C125B060A500BA0524 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB669C025B060A500BA0524 /* HomePresenter.swift */; };
 		DBB669C725B0612400BA0524 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB669C625B0612400BA0524 /* ViewControllerFactory.swift */; };
+		DBB669D325B062ED00BA0524 /* DebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB669D225B062ED00BA0524 /* DebugLog.swift */; };
+		DBB669E625B0664900BA0524 /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB669E425B0664900BA0524 /* CharacterCollectionViewCell.swift */; };
+		DBB669E725B0664900BA0524 /* CharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBB669E525B0664900BA0524 /* CharacterCollectionViewCell.xib */; };
+		DBB669EF25B0675800BA0524 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB669EE25B0675800BA0524 /* CharacterView.swift */; };
+		DBB669F425B0683B00BA0524 /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB669F325B0683B00BA0524 /* CustomLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +78,11 @@
 		DBB669BB25B0608C00BA0524 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		DBB669C025B060A500BA0524 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		DBB669C625B0612400BA0524 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		DBB669D225B062ED00BA0524 /* DebugLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLog.swift; sourceTree = "<group>"; };
+		DBB669E425B0664900BA0524 /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
+		DBB669E525B0664900BA0524 /* CharacterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCollectionViewCell.xib; sourceTree = "<group>"; };
+		DBB669EE25B0675800BA0524 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
+		DBB669F325B0683B00BA0524 /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
 		F4AFAA4E807DB7AEF1462946 /* Pods_Marvel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65E24DE40A78B8C3DADE3F6 /* Pods_MarvelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -156,6 +166,7 @@
 				DBB6699625B05FB900BA0524 /* DI */,
 				DBB6698D25B05F5200BA0524 /* Scenes */,
 				DBB669C525B0611600BA0524 /* Common */,
+				DBB669D125B062D400BA0524 /* Helpers */,
 				DBB6692625B05D4F00BA0524 /* AppDelegate.swift */,
 				DBB6692F25B05D5000BA0524 /* Assets.xcassets */,
 				DBB6693125B05D5000BA0524 /* LaunchScreen.storyboard */,
@@ -193,6 +204,7 @@
 		DBB6698E25B05F6000BA0524 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				DBB669E325B0662B00BA0524 /* Character */,
 				DBB669A925B0602D00BA0524 /* HomeEntity.swift */,
 				DBB669B125B0604700BA0524 /* HomeInteractor.swift */,
 				DBB669C025B060A500BA0524 /* HomePresenter.swift */,
@@ -233,8 +245,27 @@
 			isa = PBXGroup;
 			children = (
 				DBB669C625B0612400BA0524 /* ViewControllerFactory.swift */,
+				DBB669EE25B0675800BA0524 /* CharacterView.swift */,
+				DBB669F325B0683B00BA0524 /* CustomLayout.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		DBB669D125B062D400BA0524 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DBB669D225B062ED00BA0524 /* DebugLog.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DBB669E325B0662B00BA0524 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				DBB669E425B0664900BA0524 /* CharacterCollectionViewCell.swift */,
+				DBB669E525B0664900BA0524 /* CharacterCollectionViewCell.xib */,
+			);
+			path = Character;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +377,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB669E725B0664900BA0524 /* CharacterCollectionViewCell.xib in Resources */,
 				DBB6693325B05D5000BA0524 /* LaunchScreen.storyboard in Resources */,
 				DBB6693025B05D5000BA0524 /* Assets.xcassets in Resources */,
 				DBB6699225B05F7000BA0524 /* HomeViewController.xib in Resources */,
@@ -476,13 +508,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB669E625B0664900BA0524 /* CharacterCollectionViewCell.swift in Sources */,
 				DBB669B725B0605E00BA0524 /* HomeService.swift in Sources */,
 				DBB669C725B0612400BA0524 /* ViewControllerFactory.swift in Sources */,
 				DBB6699925B05FCE00BA0524 /* HomeAssembly.swift in Sources */,
+				DBB669EF25B0675800BA0524 /* CharacterView.swift in Sources */,
 				DBB6692725B05D4F00BA0524 /* AppDelegate.swift in Sources */,
 				DBB669A225B05FF600BA0524 /* ViewControllerAssembly.swift in Sources */,
 				DBB669B225B0604700BA0524 /* HomeInteractor.swift in Sources */,
+				DBB669F425B0683B00BA0524 /* CustomLayout.swift in Sources */,
 				DBB669BC25B0608C00BA0524 /* HomeRouter.swift in Sources */,
+				DBB669D325B062ED00BA0524 /* DebugLog.swift in Sources */,
 				DBB669C125B060A500BA0524 /* HomePresenter.swift in Sources */,
 				DBB669AA25B0602D00BA0524 /* HomeEntity.swift in Sources */,
 				DBB6699125B05F7000BA0524 /* HomeViewController.swift in Sources */,
